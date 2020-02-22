@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>puppy</title>
+    <style media="screen">
+    @media only screen and (max-device-width: 800px){
+      html{
+        -webkit-text-size-adjust: 180%;
+      }
+      body {
+        display: inline;
+      }
+      .loading{
+        padding-top:55%;
+      }
+    }
+    </style>
+    <script type="text/javascript">
+
+        window.setInterval(function(){
+                  for (let i = 0; i < 1; i++) {
+
+                    window.location.href = 'releases.html';
+
+                  };
+                }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="loading" style="text-align:center;" >
+      <a href="index1.html"><img src="images/loadingscreen.gif" style="height: 100%;padding-top:10%"width="30%" alt=""></a>
+    </div>
+  </body>
+</html>
