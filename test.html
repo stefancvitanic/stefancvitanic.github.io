@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+
+    let timer = setInterval(divMaker, 200);
+
+    function divMaker() {
+
+      for (let i = 0; i < 1000; i++) {
+            let width = "100%"
+            let height = "100%"
+
+            let row = document.createElement("div");
+            row.style.width = "100%";
+            row.style.height = "1px";
+            row.style.top = "100px";
+            row.style.background = "black";
+            document.body.appendChild(row);
+            let row2 = document.createElement("div");
+            row2.style.width = "100%";
+            row2.style.height = "1px";
+            row2.style.top = "100px";
+            row2.style.background = "white";
+            document.body.appendChild(row2);
+            console.log('new picture'+[i]);
+      }
+      clearInterval(timer);
+    }
+
+
+  </script>
+  <body>
+
+  </body>
+</html>
