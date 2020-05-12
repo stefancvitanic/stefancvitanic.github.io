@@ -8,143 +8,123 @@
     <link rel="shortcut icon" href="images/puppygif.gif">
     <title>puppy</title>
   </head>
-  <script type="text/javascript">
-/*
-    let timer = setInterval(divMaker, 200);
-
-    function divMaker() {
-
-      for (let i = 0; i < 10; i++) {
-            let zin = "-400";
-
-
-
-
-            let row2 = document.createElement("div");
-            row2.style.position = "relative";
-            row2.style.top = [i]+"px";
-            row2.style.width = "100%";
-            row2.style.height = "1px";
-            //row2.style.zIndex = zin ;
-            row2.style.background = "black";
-
-            document.body.appendChild(row2);
-            console.log('new picture'+[i]);
-            let row = document.createElement("div");
-            row.style.position = "relative";
-            row.style.top = [i]+"px";
-            row.style.width = "100%";
-            row.style.height = "1px";
-            //row.style.zIndex = zin ;
-            row.style.background = "blue";
-            document.body.appendChild(row);
-            console.log('new picture'+[i]);
-
-            let container = document.createElement("div");
-            container.setAttribute('ID','container')
-            container.style.position = "fixed";
-            container.style.top = "0px";
-            //container.innerHTML(row2, row);
-            document.body.appendChild(container);
-            document.getElementById("container").innerHTML = '<div style="position: relative; top: 1px; width: 100%; height: 100px; background: black none repeat scroll 0% 0%;"></div>';
-      }
-      clearInterval(timer);
-    }
-    */
-
-
-  </script>
   <body>
-
-    <div class="release_container" style="">
-<!--
-      <div class="header" style="text-align:center;padding-top:5%;">
-        <a href="https://soundcloud.com/puppytapes"><img src="images/circlelogo.png" alt="" width="15%"></a>
-         puppy.puppypcd.com banner
-        <a href="index1.html"><img src="images/puppypcdbanner.png" width="70%"alt=""></a>
-        <a href="https://soundcloud.com/puppytapes"><img src="images/puppyflaglogo.png" alt="" width="15%"></a>
-
+    <div class="menu">
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="submit" name="submit" value="View Cart" class="viewcart">
+        </form>
       </div>
-      !-->
-    <!--  <div class="menu" style="text-align:center;">
-        <a href="#">releases</a>
-        <br></br>
-        <a href="#">events</a>
-        <br></br>
-        <a href="links.html">links</a>
-        !-->
-
+    <div class="release_container" style="">
       <div class="wrapper">
-        <div id="row1filler" class="releaseimagecontainer">
+
+          <div class="puppy18" class="releaseimagecontainer">
+
+            <img src="archive/puppy18web.JPG" alt="" style="width:90%;">
+            <div class="cart">
+              <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="RH6ZN3KDL743S">
+                <input type="submit" name="submit" value="+ Add to Cart" class="cartbtn"/>
+              </form>
+            </div>
           </div>
         <div id="puppy17" class="releaseimagecontainer">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="padding-top:5%;">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="PMVZA7SNFG9Y6">
-            <input type="image" src="archive/puppy17cover_cropped_web.JPG" border="0" name="submit" width="95%" height="100%">
-          </form>
+          <img src="archive/puppy17cover_cropped_web.JPG" style="width:90%;" >
+          <div class="cart">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="89J48MAGLY4T2">
+              <input type="submit" name="submit" value="+ Add to Cart" class="cartbtn"/>
+            </form>
+          </div>
         </div>
-        <div id="row1filler" class="releaseimagecontainer">
-          </div>
-          <div id="puppy16" class="releaseimagecontainer">
-            <a href="https://www.discogs.com/STRAIT-JACKET-US-Traxion/release/15039920" target="_blank"><img src="archive/puppy16coverweb.JPG" class="releaseimage" alt=""></a>
-          </div>
-          <div id="puppy15" class="releaseimagecontainer">
-            <a href="https://www.discogs.com/DJ-Sledgehammer-TORMENTOR/release/14954301" target="_blank"><img src="archive/puppy15cover.JPG" class="releaseimage" alt=""></a>
-          </div>
-          <div id="puppy14" class="releaseimagecontainer">
-            <a href="https://www.discogs.com/DJ-PIRAL-1000-TEARS/release/14851710" target="_blank"><img src="archive/puppy14cover.jpeg" class="releaseimage" alt=""></a>
-          </div>
-          <div id="puppy13" class="releaseimagecontainer">
-            <a href="https://www.discogs.com/DJ-VALENTIMES-DA/release/14723781" target="_blank"><img src="archive/puppy13coverscancrop.png" class="releaseimage" alt=""></a>
-          </div>
-          <div id="puppy12" class="releaseimagecontainer">
-            <a href="puppy12.html"><img src="archive/puppy12coverscan.JPG" class="releaseimage" alt=""></a>
-          </div>
+
         <div id="pcd99" class="releaseimagecontainer">
           <a href="pcd99.html"><img src="archive/PCDcdcover.png" class="releaseimage" alt=""></a>
+          <div class="cart">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="AVPAXDZ73U97N">
+              <input type="submit" name="submit" value="+ Add to Cart" class="cartbtn"/>
+            </form>
+          </div>
         </div>
+
+          <div id="puppy16" class="releaseimagecontainer">
+            <a href="https://www.discogs.com/STRAIT-JACKET-US-Traxion/release/15039920" target="_blank"><img src="archive/puppy16coverweb.JPG" class="releaseimage" alt=""></a>
+            <br>
+
+          </div>
+
+          <div id="puppy15" class="releaseimagecontainer">
+            <a href="https://www.discogs.com/DJ-Sledgehammer-TORMENTOR/release/14954301" target="_blank"><img src="archive/puppy15cover.JPG" class="releaseimage" alt=""></a>
+            <br>
+
+          </div>
+
+          <div id="puppy14" class="releaseimagecontainer">
+            <a href="https://www.discogs.com/DJ-PIRAL-1000-TEARS/release/14851710" target="_blank"><img src="archive/puppy14cover.jpeg" class="releaseimage" alt=""></a>
+
+          </div>
+
+          <div id="puppy13" class="releaseimagecontainer">
+            <a href="https://www.discogs.com/DJ-VALENTIMES-DA/release/14723781" target="_blank"><img src="archive/puppy13coverscancrop.png" class="releaseimage" alt=""></a>
+
+          </div>
+
+          <div id="puppy12" class="releaseimagecontainer">
+            <a href="puppy12.html"><img src="archive/puppy12coverscan.JPG" class="releaseimage" alt=""></a>
+
+          </div>
+
         <div id="puppy11" class="releaseimagecontainer">
           <a href="puppy11.html"><img src="archive/puppy11.jpg" class="releaseimage" alt=""></a>
         </div>
+
         <div id="puppy10" class="releaseimagecontainer">
           <a href="puppy10.html"><img src="archive/puppy10.jpg" class="releaseimage" alt=""></a>
         </div>
+
         <div id="puppy09" class="releaseimagecontainer">
           <a href="https://www.discogs.com/DJ-LOSER-FANGS-OF-EGO/release/14150927" target="_blank"><img src="archive/puppy09.jpg" class="releaseimage" alt=""></a>
         </div>
+
         <div id="puppy08" class="releaseimagecontainer">
           <a href="https://www.discogs.com/Nebuchadnezzar-300-PM/release/14049758" target="_blank" ><img src="archive/puppy08.png" class="releaseimage"  alt=""></a>
         </div>
+
         <div id="puppy07" class="releaseimagecontainer">
           <a href="https://www.discogs.com/DJ-PIRAL-Collective-Self-Abuse-Pt1/release/14007695" target="_blank"><img src="archive/puppy07.jpg" class="releaseimage"  alt=""></a>
         </div>
+
         <div id="puppy06" class="releaseimagecontainer">
           <a href="https://www.discogs.com/DJ-BEVERLY-HILL-BAD-OMENS/release/13884958" target="_blank"><img src="archive/puppy05hires.jpg" class="releaseimage"  alt=""></a>
         </div>
+
         <div id="puppy04" class="releaseimagecontainer">
           <a href="https://www.discogs.com/guirro-ISO-DEATHPACT/release/13685650" target="_blank"><img src="archive/puppy04coverhires.jpg" class="releaseimage"  alt=""></a>
         </div>
+
         <div id="puppy03" class="releaseimagecontainer">
           <a href="https://www.discogs.com/DJ-NICK-JERSEY-BLEED/release/13638117" target="_blank"><img src="archive/puppy03.jpg" class="releaseimage"  alt=""></a>
         </div>
+
         <div id="puppy02" class="releaseimagecontainer">
           <a href="https://www.discogs.com/VARIOUS-VA/release/13075587" target="_blank"><img src="archive/puppy02.jpg" class="releaseimage"  alt=""></a>
         </div>
-        <!-- <div id="row1filler" class="releaseimagecontainer">
-          </div> -->
         <div id="puppy01" class="releaseimagecontainer">
           <a href="https://www.discogs.com/DJ-VALENTIMES-KROME_-/release/12405763" target="_blank"><img src="archive/puppy01.jpg"class="releaseimage"   alt="" ></a>
         </div>
-        <div id="row1filler" class="releaseimagecontainer">
-          </div>
-      </div>
-      <div class="releaseimagecontainer"style="text-align:center;">
+
+      <!-- <div class="releaseimagecontainer"style="text-align:center;">
           <a href="1192019.html"><img src="11092019/vhssilo.png" style="width:80%;padding-top:15%;"></a>
-      </div>
-      <!--<div class="pcd"style="text-align:center;">
+      </div> -->
+
+      <!-- <div class="pcd"style="text-align:center;">
         <a href="index1.html"><img src="images/peacelogo.png" width="50%" style="text-align:center;" alt=""></a>
-      </div>
-      !-->
+      </div> -->
+      !
   </body>
 </html>
