@@ -69,6 +69,41 @@ body {
   text-align: center;
   width:50%;
 }
+/* Cycle Images */
+#project-images {
+  padding: 0;
+}
+.project-slideshow {
+  display: block;
+}
+.cycle-slideshow {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.cycle-slideshow img {
+  width: 100%;
+  height: auto;
+}
+
+.cycle-next {
+  z-index: 3000;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 0;
+  mix-blend-mode: difference;
+}
   /* Link styling */
 a:link {
   cursor: not-allowed;
