@@ -160,9 +160,9 @@ a:visited {
 
       /* Link styling */
     a:link {
-      font-family: arial;
+      font-family: times;
         color: black;
-        font-size: 50px;
+        /*font-size: 50px;*/
         font-style: normal;
         text-decoration: none;
     }
