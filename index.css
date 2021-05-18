@@ -1,20 +1,33 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
-body {
-  font-size: 100%;
+button:focus, input:focus
+{
+	outline:0;
 }
-
+button:focus, .button:focus{
+	user-select: none;
+}
+/*Banner*/
+.logo{
+  margin-top: 1%;
+  border: 1px solid;
+  width: 15%;
+}
+.banner{
+  width: 100%;
+  margin:0;
+}
+/* Paypal Cart */
 .menu{
   font-size: 100%;
-  padding-top: 1%;
-  padding-bottom: 10%;
+  padding: .1em;
   padding-right: 1%;
+  margin-bottom: .1em;
   text-align: right;
 }
 .cartbtn{
   font-family:times;
-
   display: inline;
   font-size: 1em;
   background: transparent;
@@ -27,6 +40,10 @@ body {
   -webkit-appearance: none;
   -webkit-border-radius: none;
 }
+.cartbtn:hover{
+  text-decoration: underline;
+  color: blue !important;
+}
 .viewcart{
   font-family:times;
   font-size: 1em;
@@ -34,6 +51,10 @@ body {
   text-decoration: none;
   color: black;
   border: none;
+}
+.viewcart:hover{
+  text-decoration: underline;
+  color: blue !important;
 }
 .cart{
   font-family:times;
@@ -47,9 +68,45 @@ body {
   width:80%;
   margin:0 auto;
 }
-.wrapper{
 
-    padding-top: 0%;
+/* Mail Chimp Subscription */
+.mailchimp-umbrella{
+  width: 100%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding:.1em;
+  text-align: left;
+}
+.mc-email{
+  border-style: none;
+  text-align: left;
+  font-family: times;
+  font-size: 1em;
+  width: 30%;
+}
+.mc-subscribe{
+  margin: 5px;
+  font-family: times;
+  font-size: 1em;
+  border-style: none;
+  background: transparent;
+}
+.mc-subscribe:hover{
+  text-decoration: underline;
+  color: blue !important;
+}
+/*Announcement Section*/
+.announcement{
+  /*color:red;*/
+  width: 100%;
+  /*background-color: black;*/
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+/* Shop Gallery */
+.wrapper{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -58,18 +115,30 @@ body {
 .releaseimagecontainer {
     z-index:0;
     text-align:center;
-
 }
 .releaseimage{
     height: auto;
     width: 90%;
 }
 
-.november9th{
-  text-align: center;
-  width:50%;
+/* Link styling */
+a:link {
+  cursor: not-allowed;
+  font-family: times;
+  color: black;
+  font-style: normal;
+  text-decoration: none;
 }
-/* Cycle Images */
+a:hover {
+  color: blue !important;
+  text-decoration: underline;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* Cycle Images  NOT IN USE */
 #project-images {
   padding: 0;
 }
@@ -92,7 +161,6 @@ body {
   width: 100%;
   height: auto;
 }
-
 .cycle-next {
   z-index: 3000;
   width: 100%;
@@ -104,35 +172,11 @@ body {
   padding: 0;
   mix-blend-mode: difference;
 }
-  /* Link styling */
-a:link {
-  cursor: not-allowed;
-  font-family: times;
-    color: black;
-    font-style: normal;
-    text-decoration: none;
-}
-img{
-  width:50%;
-}
-.viewcart:hover{
-  text-decoration: underline;
-  color: blue !important;
-}
-.cartbtn:hover{
-  text-decoration: underline;
-  color: blue !important;
-}
-a:hover {
-    color: blue !important;
-    text-decoration: underline;
-}
-a:visited {
-    color: black;
-    text-decoration: none;
-}
+
+
 
 /* Media queries */
+
 /* Mobile */
 @media only screen and (max-device-width: 800px){
   html{
@@ -154,10 +198,6 @@ a:visited {
     padding-top:10%;
     width: 90%;
     }
-    img{
-      width:90%;
-    }
-
       /* Link styling */
     a:link {
       font-family: times;
@@ -177,25 +217,24 @@ a:visited {
         text-decoration: none;
     }
 }
+
 /* Responsive desktop */
 @media screen and (max-width: 840px){
+
   body {
     display: inline;
-  }
-  img{
-    width:90%;
-  }
+    }
   .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 70px;
     }
-.releaseimagecontainer {
-    text-align:center;
-  }
-.releaseimage{
-  height: auto;
-  padding-top:10%;
-  width: 90%;
-  }
+  .releaseimagecontainer {
+      text-align:center;
+    }
+  .releaseimage{
+    height: auto;
+    padding-top:10%;
+    width: 90%;
+    }
 }
