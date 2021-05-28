@@ -68,6 +68,18 @@ button:focus, .button:focus{
   width:80%;
   margin:0 auto;
 }
+.soldout{
+  font-family:times;
+  font-size: 1em;
+  background: transparent;
+  text-decoration: line-through;
+  color: black;
+  border: none;
+  border-style:solid;
+  border-width:thin;
+  width:80%;
+  margin:0 auto;
+}
 
 /* Mail Chimp Subscription */
 .mailchimp-umbrella{
