@@ -1,0 +1,60 @@
+html {
+  -webkit-text-size-adjust: 100%;
+}
+button:focus, input:focus
+{
+	outline:0;
+}
+button:focus, .button:focus{
+	user-select: none;
+}
+body{
+  color:red;
+  font-style: italic;
+  background-image:url('bg2.jpg');
+  background-size:100% 300%;
+  background-repeat: no-repeat;}
+}
+
+/* Link styling */
+a{color:red}
+a:link {
+  cursor: not-allowed;
+  font-family: times;
+  color:red;
+  font-style: normal;
+  text-decoration: italic;
+}
+a:hover {
+  color: red !important;
+  text-decoration: underline;
+}
+a:visited {
+}
+
+
+
+
+/* Media queries */
+
+/* Mobile */
+@media only screen and (max-device-width: 800px){
+  html{
+    -webkit-text-size-adjust: 180%;
+  }
+  body {
+    display:inline;
+    font-size: 2.5em;
+  }
+
+}
+
+/* Responsive desktop */
+@media screen and (max-width: 840px){
+
+  body {
+    display: inline;
+    font-size: 1.2em;
+    }
+
+}
