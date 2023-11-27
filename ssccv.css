@@ -1,62 +1,115 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
-button:focus, input:focus
-{
-	outline:0;
+
+button:focus, input:focus {
+  outline: 0;
 }
-button:focus, .button:focus{
-	user-select: none;
+
+button:focus, .button:focus {
+  user-select: none;
 }
-span{
+
+span {
   background-color: black;
 }
-body{
-  color:red;
-  font-style: italic;
-  background-image:url('bg2.jpg');
-  background-size:100% 50%;
-  background-repeat: no-repeat;}
+
+body {
+  font-size: .78em;
+  background-color: black;
+  margin-top: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-bottom: 0em;
+  color: red;
+  /*narrow-spacing*/
+  letter-spacing: .4em;
+  /*wide-spacing*/
+  /*letter-spacing: .7em;*/
 }
+
+
 /* Link styling */
-a{color:red}
-a:link {
-  cursor: not-allowed;
-  font-family: times;
-  color:red;
-  font-style: normal;
-  text-decoration: italic;
+
+a {
+  color: red
 }
+
+a:link {
+  cursor: crosshair;
+  font-family: serif;
+  color: red;
+  font-style: normal;
+}
+
 a:hover {
   color: red !important;
   text-decoration: underline;
 }
-a:visited {
+
+a:visited {}
+
+.booking {
+  margin-top: 1.5em;
 }
 
+.docu {
+  width: 40%;
+}
 
+.links {
+  margin-top: 1.5em;
+}
+
+.name {}
+
+.tour {
+  margin-top: 1.0em;
+}
+
+.works {
+  /*margin-top: 1.0em;*/
+}
 
 
 /* Media queries */
 
+
 /* Mobile */
-@media only screen and (max-device-width: 800px){
-  html{
+
+@media only screen and (max-device-width: 800px) {
+  html {
     -webkit-text-size-adjust: 180%;
   }
   body {
-    display:inline;
-    font-size: 2.2em;
+    display: inline;
+    font-size: 1.4em;
+    /*background-color:black;*/
   }
-
+  br {
+    display: block;
+    margin: .05em 0;
+  }
+  .docu {
+    width: 100%;
+  }
 }
 
+
 /* Responsive desktop */
-@media screen and (max-width: 840px){
+
+
+/*@media screen and (max-width: 840px){
 
   body {
     display: inline;
-    font-size: 1.2em;
-    }
+    font-size: .9em;
+    /*background-color:black;*/
 
+
+}
+.docu {
+  width: 70%;
+}
+*/
 }
