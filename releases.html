@@ -13,13 +13,13 @@
 
 
 <body>
-  <div class="menu">
+  <!-- <div class="menu">
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
       <input type="submit" name="submit" value="View Cart" class="viewcart">
     </form>
-  </div>
+  </div> -->
   <!-- begin Mailchimp code !-->
   <!-- <div class="mailchimp-umbrella">
     <form action="https://gmail.us1.list-manage.com/subscribe/post?u=18b1f74ba23a863d9fa2083e0&amp;id=4ffb1bebb9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate row" target="_blank" novalidate>
@@ -51,11 +51,11 @@
     <br>
     <br>
     <div class="wrapper">
-
+<span>!</span>
       <!-- tapes !-->
-      <div class="PCD8" class="releaseimagecontainer">
+      <!-- <div class="PCD8" class="releaseimagecontainer"> -->
 
-        <img src="archive/pcd8.jpeg" alt="" style="width:90%;">
+        <!-- <img src="archive/pcd8.jpeg" alt="" style="width:90%;">
         <div class="cart">
           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_s-xclick">
@@ -150,7 +150,7 @@
           </form>
         </div>
         <span> Kanal Nula - "Phase" [MR008]<br><i>CD</i><br>11USD</span>
-      </div>
+      </div> -->
 
       <!-- <div class="PCD5" class="releaseimagecontainer">
 
@@ -165,7 +165,7 @@
         <span> Spiderwrap [PCD-5]<br><i>CD</i><br>8USD</span>
       </div> -->
 
-      <div class="mr07" class="releaseimagecontainer">
+      <!-- <div class="mr07" class="releaseimagecontainer">
 
         <img src="archive/mr007.png" alt="" style="width:90%;">
         <div class="cart">
@@ -176,7 +176,7 @@
           </form>
         </div>
         <span> æinter [MR007]<br><i>CD</i><br>10USD</span>
-      </div>
+      </div> -->
 
       <!-- <div class="mr06" class="releaseimagecontainer">
 
@@ -216,7 +216,7 @@
         </div>
         <span> Alaston Univormu "memory theatre" [LH001]<br><i>CS </i><br>10USD</span>
       </div> -->
-
+<!--
       <div class="CR-047" class="releaseimagecontainer">
 
         <img src="archive/cr-047.jpg" alt="" style="width:90%;">
@@ -228,7 +228,7 @@
           </form>
         </div>
         <span> DJ Valentimes "Imminent Decay" [CR-047 - REPRESS]<br><i>12" </i><br>15USD</span>
-      </div>
+      </div> -->
 
       <!-- <div class="brkn006" class="releaseimagecontainer">
 
@@ -556,9 +556,8 @@
       <!-- <div class="pcd"style="text-align:center;">
         <a href="index1.html"><img src="images/peacelogo.png" width="50%" style="text-align:center;" alt=""></a>
       </div> -->
-      <div class="">
-        <!-- this is just filler for the bottom row !-->
-      </div>
+      <!-- <div class="">
+      </div> -->
 
     </div>
     <br>
@@ -575,33 +574,7 @@
     <br>
     <br>
     <div class="announcement">
-      <span>
-        <br>
-        <!-- ALL ORDER'S PLACED AFTER 12:00 EST 3.19.24 WILL NOT BE SHIPPED UNTIL 4.16.24 -->
-        <br>
 
-    <!--
-      NOTHING AVAILABLE AT THE MOMENT.
-      <br>
-      <br> -->
-      <!-- PLEASE SUBSCRIBE TO OUR NEWSLETTER TO STAY INFORMED ON FUTURE RELEASES, EVENTS, AND ANY GENERAL SPAM WE MAY SOLICIT.
-      <br>
-      <br> -->
-      <a href="https://t.me/puppytapes" target="_blank" style="color:red;">TELEGRAM</a>,
-      <a href="https://soundcloud.com/puppytapes" target="_blank" style="color:red;">SOUNDCLOUD</a>,
-      <a href="https://puppytapes.bandcamp.com/" target="_blank" style="color:red;">BANDCAMP</a>
-
-
-
-      <!-- FOR NOW, YOU CAN WATCH THIS <a href="#" style="color:grey;">VIDEO</a>, LISTEN TO THIS
-      <a href="#" style="color:grey;">RECORD</a>, OR READ THIS <a href="#" style="color:grey;">ARTICLE</a>.
-      <br>
-      <br>
-      IF YOU'RE REALLY ITCHING TO SPEND SOME MONEY, HERE'S A FEW PLACES YOU SHOULD REDISTRIBUTE YOUR DISPOSABLE
-      INCOME TO: <a href="#" style="color:grey;">STREET MEDICS IN COLOMBIA</a>, <a href="#" style="color:grey;">LEGAL FEES FOR INCARCERATED HUMANS IN GREECE</a> -->
-      </span>
-      <br>
-      <br>
     </div>
 </body>
 
